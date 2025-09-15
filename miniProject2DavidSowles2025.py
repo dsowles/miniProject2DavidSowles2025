@@ -68,6 +68,7 @@ print(list(df["State"].keys()))
 plt.plot(list(df["State"]), list(df["Cash"]))
 plt.show()
 
+print("Stuff")
 
 
 '''
