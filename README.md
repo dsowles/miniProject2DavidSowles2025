@@ -7,10 +7,10 @@
  
 Mini Project 2 - Python Pandas Plotting
 
-### Dependencies
+## Dependencies
 * All dependencies are listed in requirements.txt
 
-* Main dependencies are:
+### Main dependencies are:
 - Numpy
 - Pandas
 - Faker
