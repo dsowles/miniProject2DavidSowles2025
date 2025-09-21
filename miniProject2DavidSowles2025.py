@@ -9,9 +9,10 @@ import os
 
 print("Hello World!")
 
+'''
 fake = faker.Faker()
 
-'''
+
 print(fake.state())
 print(fake.pyfloat(max_value=5000, min_value=0, right_digits=2))
 
@@ -29,9 +30,9 @@ plot1 = pd.DataFrame(data = data1)
 plot1.plot()
 
 plt.show()
-'''
 
-'''
+
+
 
 data2 = [
              { "first_name": fake.first_name(),
@@ -49,7 +50,7 @@ plot2 = pd.DataFrame(data = data2)
 plot2["age"].plot()
 plt.show()
 
-'''
+
 
 
 
@@ -71,7 +72,7 @@ plt.show()
 print("Stuff")
 
 
-'''
+
 print(df["State"].keys())
 plot3.set_xticks(df["State"].keys, df["State"].values)
 
