@@ -18,7 +18,7 @@ Mini Project 2 - Python Pandas Plotting
  
 ## Description
  
-Project that uses faker to create sets of data to be represented in 
+Project that uses faker and a csv file to create sets of data to be represented in 
 Pandas dataframes and plotted using matplotlib.
  
 ## Getting Started
