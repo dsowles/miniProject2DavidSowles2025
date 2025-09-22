@@ -27,7 +27,10 @@ Pandas dataframes and plotted using matplotlib.
 to this same directory.
 3. Ensure that requirements.txt file is in the project folder.
 4. Enter pip install -r requirements.txt into the terminal.
-5. Run program.
+5. Go to https://www.kaggle.com/datasets/mosapabdelghany/medical-insurance-cost-dataset
+to download the insurance.csv file.
+6. Copy the insurance.csv file to path\miniProject2DavidSowles2025\data\insurance.csv
+7. Run program.
  
 ## Authors
  
