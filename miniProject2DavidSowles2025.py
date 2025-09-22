@@ -22,29 +22,37 @@ def main():
   print("* Pandas Charts *")
   print("*****************\n")
 
+  menu()
+
+
+
+# App's main selection menu.
+def menu() :
   print("[0]: Insurance Cost Charts\n"
         "[1]: Personal Info Charts\n"
         "[Q]: Quit App")
 
   n = input("->")
-  #print(n)
+  
+  # Using basic recursion loop for menu functionality,
+  # don't ask too many chart function calls!!!!!
   match n:
     case '0':
       print("\n")
       insuranceCostCharts()
-      main()
+      menu()
       
     case '1':
       personalCharts()
       print("\n")
-      main()
+      menu()
       
     case 'q' | 'Q':
       print("END.")
 
     case _:
       print("Bad input.\n")
-      main()
+      menu()
 
 # Function for generating a set of personal data for a number of individuals.
 # The param n defines the number of individuals to put in the set.
