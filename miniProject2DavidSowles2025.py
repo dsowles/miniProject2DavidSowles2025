@@ -20,17 +20,7 @@ print(f'Is OS module loaded?: {os}')
 def main():
   print("Hello World!")
 
-  persons = {
-    'Name' : ['Bob', 'Bill', 'Joe'],
-    'Age' : [55, 43, 22],
-    'Eye Color' : ['Blue', 'Brown', 'Hazel']
-  }
-  #frame1 = pd.DataFrame(persons)
-
-  data = generatePersonDataSet(100)
-  #print(data)
-  frame1 = pd.DataFrame(data)
-  print(frame1)
+  personalCharts()
 
 # Function for generating a set of personal data for a number of individuals.
 # The param n defines the number of individuals to put in the set.
@@ -95,7 +85,24 @@ def generatePersonData() :
 
   return person
 
+# Example function using the above two functions for constructing
+# A few charts for a set of personal data.
+def personalCharts() :
+  data = generatePersonDataSet(300)
+  frame = pd.DataFrame(data)
 
+  print(frame)
+
+  young = frame.loc[frame['Age'] < 30]
+
+  #Setup plots for young subset
+  young.plot()
+
+  fig, axes = plt.subplots(nrows=1,ncols=2)
+  young.plot(subplots=True, ax=axes[0], kind="scatter", x = "Age", y = "Income ($)")
+  young.plot(subplots=True, ax=axes[1], kind="scatter", x = "Eye Color", y = "Savings ($)")
+
+  plt.show()
 
 
 
